@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Tebak Angka</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- BACKSOUND -->
+  <audio id="bg-music" src="backsound.mp3" loop></audio>
+
+  <div class="game-container">
+    <h1>🎮 Tebak Angka</h1>
+    <p>Tebak angka antara <b>1 - 10</b></p>
+    <input type="number" id="guess" min="1" max="10">
+    <br>
+    <button onclick="checkGuess()">Tebak!</button>
+    <button onclick="resetGame()">Ulangi</button>
+    <div class="result" id="result"></div>
+    <div class="chances" id="chances">Kesempatan: 3</div>
+    <div class="score" id="score">Skor: 0</div>
+    <div class="sound-control" onclick="toggleSound()">🔊 Matikan/Menyalakan Musik</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
